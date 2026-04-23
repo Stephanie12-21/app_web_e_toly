@@ -3,11 +3,11 @@ export type Zone = {
   nom: string;
   introduction: string;
   recit: string;
-  formation_geologique: string;
-  ce_que_tu_peux_observer: string;
-  activites?: string[];
-  fady_tabous: string[];
-  details_utiles: string[];
+  formationgeologique: string;
+  cequetupeuxobserver: string;
+  activites?: string;
+  fadytabous: string;
+  detailsutiles: string;
 };
 
 export type Parc = {

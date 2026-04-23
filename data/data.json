@@ -5,66 +5,54 @@
       "key": "piscine",
       "nom": "La Piscine Naturelle",
       "introduction": "Après cette marche sous le soleil, tu vas voir… quelque chose d’assez inattendu t’attend juste un peu plus loin.",
+
       "recit": "Regarde devant toi… cette eau claire entourée de pandanus. Il faut savoir qu’un pandanus est une plante tropicale avec de longues feuilles pointues et des racines visibles qui lui donnent une forme sculpturale. Ici, tu es face à une formation géologique remarquable. Le bassin est enchâssé dans la roche. Il faut savoir qu’une formation géologique est une structure naturelle façonnée par des phénomènes comme l’érosion sur des millions d’années. L’eau est alimentée par une cascade, souvent tiède, ce qui rend la baignade très agréable après la marche. Ce lieu est aussi considéré comme un refuge naturel dans un environnement semi-aride, un endroit où l’on ralentit naturellement.",
-      "formation_geologique": "Bassin naturel formé dans le grès par l’érosion et alimenté par des infiltrations et une cascade.",
-      "ce_que_tu_peux_observer": "Le sentier pour arriver ici traverse plusieurs paysages. Tu passes d’abord par des savanes arides, puis par des zones plus fraîches en fond de canyon. Il faut savoir qu’une savane est un espace ouvert dominé par les herbes avec peu d’arbres. Tu peux aussi voir des pachypodiums. Il faut savoir qu’un pachypodium est une plante endémique de Madagascar capable de stocker l’eau dans son tronc pour survivre à la sécheresse. Les aloès sont également présents, des plantes grasses adaptées aux climats secs. En chemin, tu peux aussi croiser des sépultures du peuple Bara. Il faut savoir que les Bara sont une communauté malgache dont les traditions sont profondément liées aux ancêtres et aux lieux sacrés. Enfin, des lémuriens comme le Lemur catta peuvent apparaître discrètement sur les sentiers.",
-      "activites": [
-        "Randonnée : L’accès à la piscine fait partie d’un parcours à travers différents paysages, allant de courtes marches à des treks plus longs, toujours accompagnés d’un guide local.",
-        "Baignade : L’eau claire du bassin permet une pause rafraîchissante au cœur du parc.",
-        "Observation : Le chemin est riche en biodiversité avec des oiseaux, des reptiles comme les caméléons et plusieurs espèces de lémuriens."
-      ],
-      "fady_tabous": [
-        "Tu peux profiter de l’eau, mais l’idée est de la laisser aussi pure que tu l’as trouvée.",
-        "Si tu te baignes, fais-le simplement, sans produits, pour préserver l’équilibre naturel.",
-        "Prends le temps de profiter du calme, c’est ce qui rend ce lieu si particulier."
-      ],
-      "details_utiles": [
-        "Endroit idéal pour se rafraîchir après la randonnée",
-        "Rochers parfois glissants",
-        "Prévoir de l’eau pour la suite du parcours"
-      ]
+
+      "formationgeologique": "Ce bassin s’est formé dans le grès grâce à l’érosion progressive de l’eau et aux infiltrations naturelles qui ont façonné une cuvette rocheuse unique.",
+
+      "cequetupeuxobserver": "En arrivant ici, tu traverses différents paysages. Tu passes de savanes arides à des zones plus fraîches en fond de canyon. Il faut savoir qu’une savane est un espace ouvert dominé par les herbes avec peu d’arbres. Tu peux observer des pachypodiums, capables de stocker l’eau dans leur tronc pour survivre à la sécheresse, ainsi que des aloès adaptés aux climats arides. Il est aussi possible de croiser des sépultures du peuple Bara, une communauté dont les traditions sont profondément liées aux ancêtres. Enfin, des lémuriens comme le Lemur catta peuvent apparaître discrètement le long du sentier.",
+
+      "activites": "La randonnée permet de découvrir les différents paysages qui mènent jusqu’à la piscine naturelle. La baignade offre une pause rafraîchissante dans une eau claire et apaisante. L’observation de la faune et de la flore permet de rencontrer des oiseaux, des reptiles comme les caméléons et parfois des lémuriens dans leur habitat naturel.",
+
+      "fadytabous": "Dans ce lieu, il est important de préserver la pureté de l’eau en évitant tout produit chimique. Il est également recommandé de respecter le calme du site afin de profiter pleinement de son atmosphère paisible. Enfin, il faut prendre le temps de savourer l’instant sans précipitation.",
+
+      "detailsutiles": "C’est un endroit idéal pour se rafraîchir après une randonnée sous le soleil. Les rochers peuvent être glissants, il est donc important de marcher avec prudence. Il est conseillé d’emporter de l’eau pour la suite du parcours."
     },
+
     {
       "key": "namaza",
       "nom": "Le Canyon de Namaza",
       "introduction": "Ici, tu entres dans un couloir naturel façonné par le temps… et la sensation change immédiatement.",
-      "recit": "Le canyon de Namaza est une vallée profonde creusée dans le grès par l’érosion. Il faut savoir qu’un canyon se forme lorsque l’eau sculpte lentement la roche sur des millions d’années. En avançant, tu entres dans un espace plus frais et plus silencieux. Ce lieu est aussi un habitat pour plusieurs espèces de lémuriens. Le Lemur catta, avec sa queue rayée noire et blanche, vit en groupe et se déplace facilement au sol. Le Propithecus verreauxi verreauxi est connu pour ses grands sauts entre les rochers et les arbres, presque comme s’il flottait dans l’air. Le Eulemur fulvus, plus discret, se reconnaît à son pelage brun et vit généralement en petits groupes dans les zones boisées du canyon. Ici, la vie semble suivre un rythme lent, presque en harmonie avec les parois rocheuses.",
-      "formation_geologique": "Canyon formé par l’érosion du grès, creusé progressivement par l’eau.",
-      "ce_que_tu_peux_observer": "Le canyon abrite une végétation adaptée à l’ombre et à la sécheresse. Les plantes s’accrochent aux parois ou poussent dans les zones plus humides. La lumière change constamment selon l’heure de la journée, créant des contrastes forts sur les roches. C’est un lieu idéal pour observer la faune dans un environnement calme.",
-      "fady_tabous": [
-        "Observe les animaux sans intervenir pour respecter leur mode de vie naturel.",
-        "Garde le silence autant que possible pour profiter pleinement de l’ambiance du canyon.",
-        "Avance doucement et avec attention dans cet environnement fragile."
-      ],
-      "details_utiles": [
-        "Zone idéale pour observer les lémuriens tôt le matin ou en fin de journée",
-        "Température plus fraîche que sur les plateaux",
-        "Certains passages sont étroits"
-      ]
+
+      "recit": "Le canyon de Namaza est une vallée profonde creusée dans le grès par l’érosion. Il faut savoir qu’un canyon se forme lorsque l’eau sculpte lentement la roche sur des millions d’années. En avançant, tu entres dans un espace plus frais et plus silencieux. Ce lieu est aussi un habitat pour plusieurs espèces de lémuriens. Le Lemur catta vit en groupe et se déplace facilement au sol, tandis que le Propithecus verreauxi réalise de grands sauts entre les rochers comme s’il volait. Le Eulemur fulvus, plus discret, évolue dans les zones boisées en petits groupes. Ici, la nature suit un rythme lent et harmonieux.",
+
+      "formationgeologique": "Ce canyon s’est formé par l’érosion progressive du grès, sculpté par l’eau au fil des millions d’années.",
+
+      "cequetupeuxobserver": "Le canyon abrite une végétation adaptée à l’ombre et à la sécheresse. Certaines plantes s’accrochent aux parois rocheuses, tandis que d’autres poussent dans les zones plus humides. La lumière change constamment au fil de la journée, créant des contrastes spectaculaires sur les falaises et rendant l’endroit idéal pour l’observation.",
+
+      "activites": "La randonnée permet de traverser les passages rocheux du canyon et de découvrir ses paysages sculptés. L’observation de la faune offre la possibilité d’apercevoir des lémuriens dans leur environnement naturel. La photographie est particulièrement intéressante grâce aux jeux de lumière sur les parois. Enfin, l’immersion silencieuse permet de ressentir pleinement l’atmosphère du lieu.",
+
+      "fadytabous": "Il est essentiel de respecter le silence pour ne pas perturber les animaux. Il faut éviter toute interaction avec la faune sauvage afin de préserver son équilibre naturel. Il est aussi important d’avancer avec prudence dans cet environnement fragile.",
+
+      "detailsutiles": "Ce site est particulièrement intéressant tôt le matin ou en fin de journée lorsque la faune est plus active. La température y est plus fraîche que sur les plateaux. Certains passages peuvent être étroits et nécessitent de l’attention."
     },
+
     {
       "key": "fenetre",
       "nom": "La Fenêtre de l'Isalo",
       "introduction": "On arrive à un endroit assez emblématique… prends un instant pour regarder devant toi.",
-      "recit": "La Fenêtre de l’Isalo est une arche rocheuse naturelle emblématique, sculptée par l’érosion dans le massif gréseux du parc national de l’Isalo. Il faut savoir qu’un massif gréseux est une formation de roche issue de la compression du sable sur des millions d’années. Ce lieu est particulièrement connu pour le spectacle qu’il offre au coucher du soleil. Lorsque les derniers rayons traversent l’arche, la lumière transforme complètement le paysage. Les teintes deviennent rouges et orangées, donnant une atmosphère presque irréelle. Le site se trouve dans un décor qui rappelle les paysages de westerns, avec de grandes étendues rocheuses et ouvertes. C’est un des points les plus connus du parc et un moment fort de toute visite.",
-      "formation_geologique": "Arche naturelle formée par l’érosion du vent et de l’eau dans un massif gréseux.",
-      "ce_que_tu_peux_observer": "Autour de la fenêtre, le paysage est composé de formations rocheuses dites ruiniformes. Il faut savoir que ce terme décrit des roches sculptées par l’érosion qui prennent des formes irrégulières rappelant des ruines. Les couleurs varient entre l’ocre et le rouge selon la lumière. Tu peux aussi observer une végétation adaptée à la sécheresse comme les pachypodiums, capables de stocker l’eau dans leur tronc, et les aloès, connus pour leur résistance aux climats arides. L’immensité et le silence du lieu renforcent la sensation d’espace et de liberté.",
-      "activites": [
-        "Randonnée : Le site est intégré dans plusieurs circuits de marche qui traversent le parc, allant de quelques heures à plusieurs jours.",
-        "VTT : Certains itinéraires permettent de découvrir le parc à vélo sur des pistes adaptées.",
-        "Via ferrata : Des parcours sécurisés sur les parois rocheuses permettent d’observer le paysage depuis des hauteurs impressionnantes."
-      ],
-      "fady_tabous": [
-        "Prends le temps d’observer sans te presser, c’est un lieu fait pour contempler.",
-        "Garde une atmosphère calme pour permettre à chacun de profiter du moment.",
-        "En respectant le site, tu aides à préserver sa beauté naturelle."
-      ],
-      "details_utiles": [
-        "Meilleur moment : coucher du soleil",
-        "Lieu très fréquenté en fin de journée",
-        "Accès facile depuis les circuits principaux",
-        "Prévoir protection contre le soleil et le vent"
-      ]
+
+      "recit": "La Fenêtre de l’Isalo est une arche rocheuse naturelle sculptée par l’érosion dans un massif gréseux. Il faut savoir qu’un massif gréseux est formé par la compression du sable sur des millions d’années. Ce lieu est célèbre pour les couchers de soleil spectaculaires qui transforment complètement le paysage. Lorsque la lumière traverse l’arche, les roches prennent des teintes rouges et orangées, créant une atmosphère presque irréelle dans un décor ouvert rappelant les paysages de western.",
+
+      "formationgeologique": "Cette arche naturelle s’est formée grâce à l’érosion du vent et de l’eau dans un massif de grès.",
+
+      "cequetupeuxobserver": "Autour de la fenêtre, les formations rocheuses sont dites ruiniformes, sculptées par l’érosion en formes irrégulières rappelant des ruines naturelles. Les couleurs changent selon la lumière, oscillant entre l’ocre et le rouge. La végétation est adaptée à la sécheresse avec des plantes comme les pachypodiums et les aloès, capables de survivre dans des conditions arides. Le lieu offre une impression d’immensité et de silence.",
+
+      "activites": "La randonnée permet d’accéder à différents points de vue sur la fenêtre et ses alentours. Le VTT offre une manière dynamique de parcourir les pistes du parc. La via ferrata permet d’explorer les parois rocheuses en sécurité et d’obtenir des vues spectaculaires sur le paysage.",
+
+      "fadytabous": "Il est important de prendre le temps d’observer sans précipitation afin de profiter pleinement du lieu. Le calme doit être respecté pour permettre à tous les visiteurs de vivre l’expérience. Il est également essentiel de préserver le site pour les générations futures.",
+
+      "detailsutiles": "Le coucher du soleil est le moment le plus impressionnant pour visiter ce site. L’endroit peut être très fréquenté en fin de journée. L’accès est facile depuis les circuits principaux, mais il est conseillé de se protéger du soleil et du vent."
     }
   ]
 }

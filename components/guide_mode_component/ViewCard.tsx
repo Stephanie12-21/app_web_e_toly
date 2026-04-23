@@ -17,11 +17,11 @@ export default function ViewCard() {
       `Bienvenue à ${zone.nom}`,
       zone.introduction,
       zone.recit,
-      ...zone.formation_geologique,
-      ...zone.ce_que_tu_peux_observer,
-      ...(zone.activites || []),
-      ...zone.fady_tabous,
-      ...zone.details_utiles,
+      zone.formationgeologique,
+      zone.cequetupeuxobserver,
+      zone.activites || "Aucune activité répertoriée pour cette zone.",
+      zone.fadytabous,
+      zone.detailsutiles,
     ]);
     sendRobotToZone(zone.key);
   };
@@ -59,25 +59,19 @@ export default function ViewCard() {
             <p className="text-gray-700 mb-4">{selectedZone.recit}</p>
 
             <h3 className="font-semibold">🌿 Activités</h3>
-            <ul className="list-disc ml-5 mb-3">
-              {selectedZone.activites?.map((a: string, i: number) => (
-                <li key={i}>{a}</li>
-              ))}
-            </ul>
+            <ul className="list-disc ml-5 mb-3">{selectedZone.activites}</ul>
 
             <h3 className="font-semibold">⚠️ Tabous</h3>
             <ul className="list-disc ml-5 mb-3">
-              {selectedZone.fady_tabous?.map((t: string, i: number) => (
-                <li key={i}>{t}</li>
-              ))}
+              {selectedZone.fadytabous
+                ?.split("\n")
+                .map((t: string, i: number) => (
+                  <li key={i}>{t}</li>
+                ))}
             </ul>
 
             <h3 className="font-semibold">📌 Infos utiles</h3>
-            <ul className="list-disc ml-5">
-              {selectedZone.details_utiles?.map((d: string, i: number) => (
-                <li key={i}>{d}</li>
-              ))}
-            </ul>
+            <ul className="list-disc ml-5">{selectedZone.detailsutiles}</ul>
           </>
         ) : (
           <p className="text-gray-500">
