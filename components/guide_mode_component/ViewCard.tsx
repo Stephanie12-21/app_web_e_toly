@@ -59,19 +59,13 @@ export default function ViewCard() {
             <p className="text-gray-700 mb-4">{selectedZone.recit}</p>
 
             <h3 className="font-semibold">🌿 Activités</h3>
-            <ul className="list-disc ml-5 mb-3">{selectedZone.activites}</ul>
+            <p className="list-disc ml-5 mb-3">{selectedZone.activites}</p>
 
             <h3 className="font-semibold">⚠️ Tabous</h3>
-            <ul className="list-disc ml-5 mb-3">
-              {selectedZone.fadytabous
-                ?.split("\n")
-                .map((t: string, i: number) => (
-                  <li key={i}>{t}</li>
-                ))}
-            </ul>
+            <p className="list-disc ml-5 mb-3">{selectedZone.fadytabous}</p>
 
             <h3 className="font-semibold">📌 Infos utiles</h3>
-            <ul className="list-disc ml-5">{selectedZone.detailsutiles}</ul>
+            <p className="list-disc ml-5">{selectedZone.detailsutiles}</p>
           </>
         ) : (
           <p className="text-gray-500">
