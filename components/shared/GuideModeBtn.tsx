@@ -5,7 +5,12 @@ import { Button } from "../ui/button";
 const GuideModeBtn = () => {
   const router = useRouter();
 
-  const handleClick = () => {
+  const handleClick = async () => {
+    await fetch("/api/mode", {
+      method: "POST",
+      body: JSON.stringify({ mode: "GUIDE" }),
+    });
+
     router.push("/guide-mode");
   };
 

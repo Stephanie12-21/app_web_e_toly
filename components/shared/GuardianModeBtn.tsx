@@ -5,7 +5,12 @@ import { Button } from "../ui/button";
 const GuardianModeBtn = () => {
   const router = useRouter();
 
-  const handleClick = () => {
+  const handleClick = async () => {
+    await fetch("/api/mode", {
+      method: "POST",
+      body: JSON.stringify({ mode: "GUARDIAN" }),
+    });
+
     router.push("/guardian-mode");
   };
 
