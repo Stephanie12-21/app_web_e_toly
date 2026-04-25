@@ -1,4 +1,3 @@
-// services/speechService.ts
 
 let voices: SpeechSynthesisVoice[] = [];
 

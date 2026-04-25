@@ -1,5 +1,5 @@
 import data from "@/data/data.json";
-import { Zone } from "@/types";
+import { Zone } from "@/domain/zone";
 
 export function getParcName(): string {
   return data.parc;

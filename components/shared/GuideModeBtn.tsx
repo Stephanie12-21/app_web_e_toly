@@ -2,15 +2,13 @@
 
 import { useRouter } from "next/navigation";
 import { Button } from "../ui/button";
+import { setGuideMode } from "@/services/robotService";
+
 const GuideModeBtn = () => {
   const router = useRouter();
 
   const handleClick = async () => {
-    await fetch("/api/mode", {
-      method: "POST",
-      body: JSON.stringify({ mode: "GUIDE" }),
-    });
-
+    await setGuideMode(); // 🔥 ACTIVE LE ROBOT
     router.push("/guide-mode");
   };
 

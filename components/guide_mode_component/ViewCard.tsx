@@ -2,28 +2,52 @@
 
 import { useState } from "react";
 import data from "@/data/data.json";
-import { sendRobotToZone } from "@/services/robotService";
-import { Zone } from "@/types";
+import {
+  goToNamaza,
+  goToPiscine,
+  sendRobotToZone,
+} from "@/services/robotService";
 import { speakSequence } from "@/services/speechService";
+import { Zone } from "@/domain/zone";
 
 export default function ViewCard() {
   const [selectedKey, setSelectedKey] = useState<string | null>(null);
 
   const selectedZone = data.zones.find((z: Zone) => z.key === selectedKey);
 
-  const handleClick = (zone: Zone) => {
+  const handleClick = async (zone: Zone) => {
+    console.log("[UI] Zone cliquée:", zone.key);
+
     setSelectedKey(zone.key);
-    speakSequence([
+
+    // 🎯 1. Déplacement robot (UNE SEULE FOIS)
+    try {
+      if (zone.key === "piscine") await goToPiscine();
+      else if (zone.key === "namaza") await goToNamaza();
+      else if (zone.key === "fenetre") await sendRobotToZone("savane");
+      else await sendRobotToZone(zone.key);
+
+      console.log("[UI] Commande robot envoyée");
+    } catch (err) {
+      console.error("[ERROR] Robot:", err);
+    }
+
+    // 🎙️ 2. Préparer texte propre
+    const speechParts = [
       `Bienvenue à ${zone.nom}`,
       zone.introduction,
       zone.recit,
       zone.formationgeologique,
       zone.cequetupeuxobserver,
-      zone.activites || "Aucune activité répertoriée pour cette zone.",
+      zone.activites,
       zone.fadytabous,
       zone.detailsutiles,
-    ]);
-    sendRobotToZone(zone.key);
+    ].filter(Boolean); // 🔥 enlève undefined/null
+
+    console.log("[VOICE] Démarrage narration");
+
+    // 🎤 3. Lancer narration
+    speakSequence(speechParts as string[]);
   };
 
   return (
@@ -33,7 +57,7 @@ export default function ViewCard() {
         {data.zones.map((zone: Zone) => (
           <div
             key={zone.key}
-            className={`p-4 border rounded-xl cursor-pointer transition hover:bg-gray-100 ${
+            className={`p-4 border rounded-xl transition hover:bg-gray-100 ${
               selectedKey === zone.key ? "bg-blue-50 border-blue-400" : ""
             }`}
           >
@@ -59,13 +83,13 @@ export default function ViewCard() {
             <p className="text-gray-700 mb-4">{selectedZone.recit}</p>
 
             <h3 className="font-semibold">🌿 Activités</h3>
-            <p className="list-disc ml-5 mb-3">{selectedZone.activites}</p>
+            <p className="ml-5 mb-3">{selectedZone.activites}</p>
 
             <h3 className="font-semibold">⚠️ Tabous</h3>
-            <p className="list-disc ml-5 mb-3">{selectedZone.fadytabous}</p>
+            <p className="ml-5 mb-3">{selectedZone.fadytabous}</p>
 
             <h3 className="font-semibold">📌 Infos utiles</h3>
-            <p className="list-disc ml-5">{selectedZone.detailsutiles}</p>
+            <p className="ml-5">{selectedZone.detailsutiles}</p>
           </>
         ) : (
           <p className="text-gray-500">

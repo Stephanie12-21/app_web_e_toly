@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import { robot } from "@/simulator/robot-sim";
 import { speak } from "@/services/speechService";
-import { SpeechEvent } from "@/types";
+import { SpeechEvent } from "@/domain/robot";
 
 export default function RobotListener() {
   useEffect(() => {

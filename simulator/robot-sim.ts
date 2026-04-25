@@ -40,3 +40,11 @@ setInterval(() => {
     });
   }
 }, 8000);
+
+export function simulateMovement(zone: string) {
+  console.log("🤖 [ROBOT] Déplacement vers:", zone);
+
+  setTimeout(() => {
+    console.log("🤖 [ROBOT] Arrivé à:", zone);
+  }, 2000);
+}
