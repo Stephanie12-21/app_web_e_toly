@@ -68,7 +68,7 @@ export const goToParc = () => goToZone("historique");
 export async function sendQuestion(pin: string) {
   console.log("[ROBOT] Question envoyée:", pin);
 
-  return fetch("/api/blynk", {
+  return fetch("/api/robot", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
