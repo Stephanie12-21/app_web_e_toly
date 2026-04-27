@@ -1,5 +1,20 @@
 {
-  "parc": "Isalo National Park",
+  "parc": {
+    "nom": "Isalo National Park",
+    "historique": {
+      "introduction": "Avant de découvrir les différents sites, il est important de comprendre où tu te trouves vraiment.",
+      "recit": "Le massif de l’Isalo s’est formé il y a des centaines de millions d’années. À cette époque, la région était recouverte de dépôts de sable qui, avec le temps et la pression, se sont transformés en grès. Il faut savoir que le grès est une roche issue de la compaction du sable sur une très longue période. Ensuite, le vent et l’eau ont lentement sculpté ces roches, donnant naissance aux canyons, plateaux et formations que tu vois aujourd’hui. Bien avant d’être un parc national, cet espace était déjà utilisé par les populations locales, notamment le peuple Bara. Les Bara sont une communauté du sud de Madagascar, très attachée aux traditions et au respect des ancêtres. Ils utilisaient ces lieux comme zones de passage, mais aussi comme espaces sacrés, notamment pour y installer des tombeaux dans les falaises. En 1962, l’Isalo a été officiellement classé parc national afin de protéger à la fois sa richesse naturelle et son importance culturelle. Aujourd’hui, c’est l’un des sites les plus emblématiques du pays, où la nature, l’histoire et les traditions coexistent encore.",
+      "chiffrescles": {
+        "superficie": "81 540 hectares",
+        "creation": "19 juillet 1962",
+        "habitats": "canyons, plateaux gréseux, savanes, forêts sclérophylles, forêts alluvionnaires",
+        "faune": "7 espèces de lémuriens, 77 espèces d’oiseaux, 33 reptiles, 15 amphibiens, 17 mammifères",
+        "flore": "plus de 200 espèces de plantes",
+        "climat": "semi-aride avec variations saisonnières",
+        "acces": "Route Nationale 7 via Ranohira"
+      }
+    }
+  },
   "zones": [
     {
       "key": "piscine",
