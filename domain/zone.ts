@@ -8,6 +8,7 @@ export type Zone = {
   activites?: string;
   fadytabous: string;
   detailsutiles: string;
+  questions?: { question: string; reponse: string }[];
 };
 
 export type Parc = {
