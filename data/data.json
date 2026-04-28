@@ -32,20 +32,7 @@
 
       "fadytabous": "Dans ce lieu, il est important de préserver la pureté de l’eau en évitant tout produit chimique. Il est également recommandé de respecter le calme du site afin de profiter pleinement de son atmosphère paisible. Enfin, il faut prendre le temps de savourer l’instant sans précipitation.",
 
-      "detailsutiles": "C’est un endroit idéal pour se rafraîchir après une randonnée sous le soleil. Les rochers peuvent être glissants, il est donc important de marcher avec prudence. Il est conseillé d’emporter de l’eau pour la suite du parcours.",
-
-      "questions": [
-        {
-          "key": "V10",
-          "question": "Pourquoi l’eau de la piscine naturelle est-elle claire ?",
-          "reponse": "Parce qu’elle est filtrée naturellement par la roche et alimentée sans pollution directe."
-        },
-        {
-          "key": "V11",
-          "question": "Comment s’est formée la piscine naturelle ?",
-          "reponse": "Elle s’est formée par l’érosion du grès et les infiltrations d’eau sur des millions d’années."
-        }
-      ]
+      "detailsutiles": "C’est un endroit idéal pour se rafraîchir après une randonnée sous le soleil. Les rochers peuvent être glissants, il est donc important de marcher avec prudence. Il est conseillé d’emporter de l’eau pour la suite du parcours."
     },
 
     {
@@ -63,19 +50,7 @@
 
       "fadytabous": "Il est essentiel de respecter le silence pour ne pas perturber les animaux. Il faut éviter toute interaction avec la faune sauvage afin de préserver son équilibre naturel. Il est aussi important d’avancer avec prudence dans cet environnement fragile.",
 
-      "detailsutiles": "Ce site est particulièrement intéressant tôt le matin ou en fin de journée lorsque la faune est plus active. La température y est plus fraîche que sur les plateaux. Certains passages peuvent être étroits et nécessitent de l’attention.",
-      "questions": [
-        {
-          "key": "V12",
-          "question": "Pourquoi le canyon est-il si profond ?",
-          "reponse": "Parce que l’érosion de l’eau a creusé le grès progressivement pendant des millions d’années."
-        },
-        {
-          "key": "V13",
-          "question": "Quels animaux peut-on voir dans le canyon ?",
-          "reponse": "On peut observer des lémuriens comme le Lemur catta, le Propithecus verreauxi et le Eulemur fulvus."
-        }
-      ]
+      "detailsutiles": "Ce site est particulièrement intéressant tôt le matin ou en fin de journée lorsque la faune est plus active. La température y est plus fraîche que sur les plateaux. Certains passages peuvent être étroits et nécessitent de l’attention."
     },
 
     {
@@ -93,19 +68,7 @@
 
       "fadytabous": "Il est important de prendre le temps d’observer sans précipitation afin de profiter pleinement du lieu. Le calme doit être respecté pour permettre à tous les visiteurs de vivre l’expérience. Il est également essentiel de préserver le site pour les générations futures.",
 
-      "detailsutiles": "Le coucher du soleil est le moment le plus impressionnant pour visiter ce site. L’endroit peut être très fréquenté en fin de journée. L’accès est facile depuis les circuits principaux, mais il est conseillé de se protéger du soleil et du vent.",
-      "questions": [
-        {
-          "key": "V14",
-          "question": "Pourquoi la Fenêtre de l’Isalo est-elle célèbre ?",
-          "reponse": "Elle est célèbre pour son arche naturelle et ses couchers de soleil spectaculaires."
-        },
-        {
-          "key": "V15",
-          "question": "Comment s’est formée cette arche rocheuse ?",
-          "reponse": "Elle s’est formée par l’érosion du vent et de l’eau sur le massif de grès."
-        }
-      ]
+      "detailsutiles": "Le coucher du soleil est le moment le plus impressionnant pour visiter ce site. L’endroit peut être très fréquenté en fin de journée. L’accès est facile depuis les circuits principaux, mais il est conseillé de se protéger du soleil et du vent."
     }
   ]
 }

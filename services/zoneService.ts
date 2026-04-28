@@ -1,10 +1,6 @@
 import data from "@/data/data.json";
 import { Zone } from "@/domain/zone";
 
-export function getParcName(): string {
-  return data.parc;
-}
-
 export function getAllZones(): Zone[] {
   return data.zones;
 }
