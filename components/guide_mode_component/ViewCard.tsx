@@ -9,7 +9,7 @@ import {
   goToHistorique,
   sendQuestion,
 } from "@/services/robotService";
-import { speakSequence } from "@/services/speechService";
+//import { speakSequence } from "@/services/speechService";
 import { Zone } from "@/domain/zone";
 import questionsData from "@/data/questions.json";
 
@@ -25,21 +25,20 @@ export default function ViewCard() {
 
     const hist = data.parc.historique;
 
-    speakSequence([
-      `Bienvenue dans le parc national de ${data.parc.nom}.`,
-      hist.introduction,
-      hist.recit,
-      `Le parc couvre ${hist.chiffrescles.superficie}.`,
-      `Il a été créé le ${hist.chiffrescles.creation}.`,
-      `On y trouve ${hist.chiffrescles.faune}.`,
-      `La flore comprend ${hist.chiffrescles.flore}.`,
-      `Choisis une zone pour continuer.`,
-    ]);
+    // speakSequence([
+    //   `Bienvenue dans le parc national de ${data.parc.nom}.`,
+    //   hist.introduction,
+    //   hist.recit,
+    //   `Le parc couvre ${hist.chiffrescles.superficie}.`,
+    //   `Il a été créé le ${hist.chiffrescles.creation}.`,
+    //   `On y trouve ${hist.chiffrescles.faune}.`,
+    //   `La flore comprend ${hist.chiffrescles.flore}.`,
+    //   `Choisis une zone pour continuer.`,
+    // ]);
 
     setStep("zones");
   };
 
-  // 📍 QUESTIONS PAR ZONE (JSON EXTERNE)
   const getQuestions = (zoneKey: string) => {
     return (
       questionsData.questions[
@@ -48,7 +47,6 @@ export default function ViewCard() {
     );
   };
 
-  // 📍 CLIQUE ZONE
   const handleClick = async (zone: Zone) => {
     setSelectedKey(zone.key);
 
@@ -70,7 +68,6 @@ export default function ViewCard() {
     ]);
   };
 
-  // 🎯 ACTIVATION QUESTION + ROBOT + VOIX
   const handleQuestion = async (
     pin: string,
     question: string,
@@ -83,7 +80,6 @@ export default function ViewCard() {
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-      {/* 📍 LISTE */}
       <div className="space-y-4">
         {step === "intro" && (
           <>
@@ -133,7 +129,6 @@ export default function ViewCard() {
           ))}
       </div>
 
-      {/* 📖 DÉTAIL + QUESTIONS */}
       <div className="border rounded-xl p-4">
         {selectedZone ? (
           <>

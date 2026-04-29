@@ -1,10 +1,10 @@
 import { simulateMovement } from "@/simulator/robot-sim";
 
 /* =========================
-   CORE API SEND
+   CORE API
 ========================= */
 async function send(action: string) {
-  console.log("[SERVICE] Envoi vers robot:", action);
+  console.log("[ROBOT] Action:", action);
 
   const res = await fetch("/api/robot", {
     method: "POST",
@@ -14,25 +14,28 @@ async function send(action: string) {
     body: JSON.stringify({ action }),
   });
 
-  const data = await res.json();
-
-  console.log("[SERVICE] Réponse API:", data);
-
-  return data;
+  return await res.json();
 }
 
 /* =========================
-   MODES
+   MODES (HOME)
 ========================= */
-export const setGuideMode = () => send("GUIDE");
+export const setGuideMode = async () => {
+  await send("GUIDE");
+  await send("RESET"); // 🔥 important: reset entrée guide
+};
+
 export const setGuardianMode = () => send("GUARDIAN");
 
 /* =========================
-   ZONES
+   RESET MANUEL
+========================= */
+export const resetRobot = () => send("RESET");
+
+/* =========================
+   ZONES (GUIDE FLOW)
 ========================= */
 export async function goToZone(key: string) {
-  console.log("[SERVICE] Simulation locale:", key);
-
   simulateMovement(key);
 
   const map: Record<string, string> = {
@@ -45,7 +48,7 @@ export async function goToZone(key: string) {
   const action = map[key];
 
   if (!action) {
-    console.warn("[SERVICE] Zone inconnue:", key);
+    console.warn("[ROBOT] Zone inconnue:", key);
     return;
   }
 
@@ -58,24 +61,8 @@ export const goToSavane = () => goToZone("savane");
 export const goToHistorique = () => goToZone("historique");
 
 /* =========================
-   PARC START
-========================= */
-export const goToParc = () => goToZone("historique");
-
-/* =========================
-   QUESTIONS (BLYNK)
+   QUESTIONS (PIN SYSTEM)
 ========================= */
 export async function sendQuestion(pin: string) {
-  console.log("[ROBOT] Question envoyée:", pin);
-
-  return fetch("/api/robot", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
-    body: JSON.stringify({
-      pin,
-      value: 1,
-    }),
-  });
+  return send(pin); // 🔥 direct V10, V11, etc
 }

@@ -1,30 +1,31 @@
 "use client";
 
-import GoBackBtn from "@/components/shared/GoBackBtn";
-import ViewCard from "@/components/guide_mode_component/ViewCard";
-const GuideModePage = () => {
+import { useRouter } from "next/navigation";
+import data from "@/data/data.json";
+import { resetRobot } from "@/services/robotService";
+import { useEffect } from "react";
+
+export default function GuideIntro() {
+  const router = useRouter();
+  useEffect(() => {
+    resetRobot();
+  }, []);
+
   return (
-    <div className=" px-4">
-      <div className="mx-auto max-w-8xl px-4 sm:px-6 lg:px-8 mt-13">
-        <GoBackBtn />
+    <div className="max-w-4xl mx-auto p-6 space-y-6">
+      <div className="p-6 border rounded-xl bg-yellow-50">
+        <h2 className="text-2xl font-bold mb-3">Histoire du {data.parc.nom}</h2>
 
-        {/* Titre + filtre */}
-        <div className="mb-8  mt-5 flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-          <div>
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
-              Découvrez nos destinations
-            </h1>
-            <p className="text-gray-600 text-lg">
-              Trouvez votre prochaine aventure parmi nos circuits exceptionnels
-            </p>
-          </div>
-        </div>
-
-        <ViewCard />
-
+        <p className="mb-2">{data.parc.historique.introduction}</p>
+        <p className="mb-4">{data.parc.historique.recit}</p>
       </div>
+
+      <button
+        onClick={() => router.push("/guide-mode/zone")}
+        className="w-full py-3 bg-green-600 text-white rounded-xl font-semibold"
+      >
+        Commencer l’exploration
+      </button>
     </div>
   );
-};
-
-export default GuideModePage;
+}
