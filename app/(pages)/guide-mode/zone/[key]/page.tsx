@@ -85,7 +85,7 @@ export default function ZoneDetail() {
 
             {/* BUTTON */}
             <button
-              onClick={() => handleToggleAnswer(index, q.pin)}
+              onClick={() => handleToggleAnswer(index, q.action)}
               className="mt-2 px-3 py-1 bg-blue-500 text-white rounded"
             >
               {openIndex === index ? "Masquer la réponse" : "Voir la réponse"}

@@ -2,12 +2,12 @@
   "questions": {
     "piscine": [
       {
-        "pin": "V10",
+        "action": "PISCINE_Q1",
         "question": "Qu’est-ce qu’un pandanus ?",
         "reponse": "Un pandanus est une plante tropicale très résistante que l’on retrouve souvent dans les zones chaudes et sèches. Il se reconnaît à ses longues feuilles pointues et à ses racines aériennes qui lui permettent de se stabiliser dans des sols parfois instables. Dans l’Isalo, il joue aussi un rôle important dans l’écosystème en offrant de l’ombre et un habitat à certaines espèces."
       },
       {
-        "pin": "V11",
+        "action": "PISCINE_Q2",
         "question": "Comment s’est formée la piscine naturelle ?",
         "reponse": "La piscine naturelle s’est formée progressivement grâce à l’érosion du grès par l’eau au fil des milliers d’années. L’eau de ruissellement et les petites cascades ont creusé une cuvette dans la roche, puis cette cavité s’est remplie naturellement. Aujourd’hui, elle reste alimentée par des sources locales, ce qui explique la clarté et la fraîcheur de l’eau."
       }
@@ -15,12 +15,12 @@
 
     "namaza": [
       {
-        "pin": "V12",
+        "action": "NAMAZA_Q1",
         "question": "Qu’est-ce qu’un canyon ?",
         "reponse": "Un canyon est une vallée profonde et étroite creusée par l’action lente mais continue de l’eau sur la roche. Dans le cas de Namaza, il s’est formé sur des millions d’années dans le grès. Ses parois abruptes témoignent de cette érosion progressive, et il crée aujourd’hui un microclimat plus frais et humide que les plateaux environnants."
       },
       {
-        "pin": "V13",
+        "action": "NAMAZA_Q2",
         "question": "Pourquoi le canyon est-il plus frais ?",
         "reponse": "Le canyon est plus frais car ses parois hautes bloquent une grande partie de la lumière directe du soleil. Cette ombre permanente réduit la température au sol. De plus, la présence de végétation et parfois d’eau crée un environnement plus humide, ce qui accentue la sensation de fraîcheur par rapport aux zones ouvertes du parc."
       }
@@ -28,12 +28,12 @@
 
     "savane": [
       {
-        "pin": "V14",
+        "action": "SAVANE_Q1",
         "question": "Qu’est-ce que la Fenêtre de l’Isalo ?",
         "reponse": "La Fenêtre de l’Isalo est une formation rocheuse naturelle en forme d’arche, sculptée dans le grès par des millions d’années d’érosion. Elle est devenue un symbole du parc, notamment pour les couchers de soleil spectaculaires où la lumière traverse l’ouverture et transforme complètement les couleurs du paysage."
       },
       {
-        "pin": "V15",
+        "action": "SAVANE_Q2",
         "question": "Pourquoi les couleurs changent au coucher du soleil ?",
         "reponse": "Les couleurs changent au coucher du soleil à cause de l’angle de la lumière et de sa diffusion dans l’atmosphère. Les roches de grès, riches en minéraux, réfléchissent particulièrement bien les tons rouges, oranges et dorés. Cela crée un effet visuel intense et changeant selon les minutes."
       }
